@@ -30,4 +30,4 @@ $taufan = new Person('Taufan Prasetyo');
 
 $taufan->setAge(25);
 
-var_dump($taufan);
+var_dump($taufan->getAge());
