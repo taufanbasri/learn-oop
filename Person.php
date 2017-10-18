@@ -2,9 +2,9 @@
 
 class Person
 {
-    public $name;
+    private $name;
 
-    public $age;
+    private $age;
 
     public function __construct($name)
     {
@@ -13,7 +13,7 @@ class Person
 
     public function getAge()
     {
-        return $this->age;
+        return $this->age * 365;
     }
 
     public function setAge($age)
