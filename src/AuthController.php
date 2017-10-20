@@ -2,15 +2,15 @@
 
 namespace PCode;
 
-class AuthController
+class AuthController implements RespondsToUserRegistration
 {
-    // with injection method
+    // with method injection
     // public function register(RegisterUser $registration)
     // {
     //     $registration->execute();
     // }
 
-    // with construct method
+    // with construct injection
     protected $registration;
 
     public function __construct(RegisterUser $registration)
